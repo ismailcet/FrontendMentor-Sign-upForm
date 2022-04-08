@@ -1,0 +1,35 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+/* font-family:  */
+
+/* Global Variables */
+:root{
+
+    --clr-red:hsl(0, 100%, 74%);
+    --clr-green:hsl(154, 59%, 51%);
+    --clr-blue:hsl(248, 32%, 49%);
+    --clr-dark-blue:hsl(249, 10%, 26%);
+    --clr-grayish-blue:hsl(246, 25%, 77%);    
+    --ff-primary:'Poppins', sans-serif;
+    --radius:0.5rem;
+    --transition:all 0.5s linear;
+}
+
+/* Global Styles */
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: var(--ff-primary);
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+img:not(.logo){
+    width: 100%;
+}
