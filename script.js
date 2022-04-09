@@ -30,6 +30,13 @@ function hideAlert(){
         passError.classList.remove('active')
     }
 }
+//Clear Input Values
+function clearInput(){
+    name.value='';
+    last.value='';
+    email.value='';
+    pass.value='';
+}
 // Validate Check Email
 const validateEmail = (email) => {
     return email.match(
@@ -47,20 +54,25 @@ function showValues(e){
     if(nameValue==''){
         name.classList.add('wrong');
         nameError.classList.add('active')
+        nameValue=''
     }
     if(lastValue==''){
         last.classList.add('wrong');
         lastError.classList.add('active')
+        lastValue=''
     }
     if(emailValue=='' || validateEmail(emailValue) == null){
         email.classList.add('wrong');
         emailError.classList.add('active')
+        emailValue=''
     }
     if(passValue==''){
         pass.classList.add('wrong');
         passError.classList.add('active')
+        passValue='';
     }
     setTimeout(hideAlert, 1000);
+    clearInput();
     e.preventDefault();
 }
 
